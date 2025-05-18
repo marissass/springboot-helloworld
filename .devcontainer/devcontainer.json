@@ -1,17 +1,10 @@
 {
-    "name": "Java Spring Boot Dev Container",
-    "image": "mcr.microsoft.com/devcontainers/java:17-bullseye",
-    "features": {
-      "ghcr.io/devcontainers/features/maven:1": {},
-      "ghcr.io/devcontainers/features/git:1": {}
+  "name": "Java Spring Boot Dev Container",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17"
     },
-    "customizations": {
-      "vscode": {
-        "extensions": [
-          "vscjava.vscode-spring-boot",
-          "vscjava.vscode-java-pack"
-        ]
-      }
-    },
-    "forwardPorts": [8080]
-  }
+    "ghcr.io/devcontainers/features/maven:1": {}
+  },
+  "forwardPorts": [8080]
+}
